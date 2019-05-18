@@ -1,0 +1,32 @@
+.home-container {
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 4vh;
+}
+
+.logo-container img {
+  object-fit: contain;
+  width: 40vw;
+}
+
+.game-mode-container {
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-mode {
+  border-radius: 2vw;
+  background: rgb(241, 235, 235);
+  box-shadow: 9px 20px 10px -10px rgba(0, 0, 0, 0.883);
+  width: 60vw;
+  height: 7vh;
+  color: black;
+  margin: 4vh;
+  font-size: 1.2rem;
+}
