@@ -5,6 +5,7 @@
     width: 100vw;
     background-color: red;
     color: white;
+    box-shadow: 0px 20px 10px -10px rgba(0, 0, 0, 0.431);
   }
 
   .nav-bar h1 {
@@ -16,6 +17,7 @@
     width: 70vw;
     font-size: 25px;
     text-align: center;
+    font-family: 'Lobster', cursive;
   }
 
   /* Position and sizing of burger button */
@@ -59,9 +61,45 @@
 
   /* General sidebar styles */
   .bm-menu {
-    background: #373a47;
+    background: rgba(0, 0, 255, 0.781);
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
+  }
+
+  .username-container {
+    position: relative;
+    top: -6.3vh;
+    left: -7vw;
+    font-size: 0.9rem;
+    color: white;
+    text-emphasis: none;
+    /* border-bottom: 3px solid black; */
+    padding-bottom: 1vh;
+    width: 50vw;
+  }
+
+  .username-container h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.7rem;
+  }
+
+  .username-container:focus {
+    outline: none;
+  }
+
+  #username {
+    color: rgb(173, 143, 143);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.35rem;
+  }
+
+  #online-status {
+    color: rgb(197, 36, 36);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.15rem;
+  }
+
+  .friends-list-container {
   }
 
   /* Morph shape necessary with bubble or elastic */
@@ -86,6 +124,8 @@
   }
 
   .menu-item {
+    position: relative;
+    left: -7vw;
     text-decoration: none;
     color: white;
     font-size: 20px;

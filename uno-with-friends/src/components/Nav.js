@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { elastic as Menu } from 'react-burger-menu'
+import { slide as Menu } from 'react-burger-menu'
 import '../css/Nav.css'
 
 export default class Nav extends Component {
@@ -8,9 +8,14 @@ export default class Nav extends Component {
       <div className="nav-bar">
         <h1>Uno With Friends</h1>
         <Menu>
-          <a id="home" className="menu-item" href="/">
-            Home
-          </a>
+          <div className="username-container">
+            <h3>Username</h3>
+            <span id="username">VitoGrand24</span>{' '}
+            <span id="online-status">ONLINE</span>
+          </div>
+          <div className="friends-list-container">
+            <h3>Username</h3>
+          </div>
           <a id="signin" className="menu-item" href="/signin">
             Sign In
           </a>
