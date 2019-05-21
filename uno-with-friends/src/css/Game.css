@@ -1,0 +1,44 @@
+.game {
+  padding-top: 10vh;
+  color: white;
+  height: 100vh;
+}
+
+.center-content-container {
+  border: 2px solid;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.shorter {
+  height: 30vh;
+}
+
+.card-from-hand {
+  position: relative;
+  border: 2px solid;
+  border-radius: 8vw;
+  width: 50%;
+  height: 90%;
+}
+
+.card {
+  position: relative;
+  border: 2px solid;
+  border-radius: 8vw;
+  width: 50%;
+  height: 90%;
+}
+
+.smaller {
+  width: 12.5vw;
+  height: 40%;
+  border-radius: 3vw;
+}
+
+.spacing {
+  margin: 0.2rem;
+}

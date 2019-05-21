@@ -3,6 +3,30 @@ import { slide as Menu } from 'react-burger-menu'
 import '../css/Nav.css'
 
 export default class Nav extends Component {
+  state = {
+    friends: [
+      { name: 'gangsta2344' },
+      { name: 'Chiefmaster' },
+      { name: 'fornitequeen' },
+      { name: 'basher474' }
+    ]
+  }
+
+  getFriends = () => {
+    let { friends } = this.state
+    let newFreinds = friends.map(friend => {
+      // console.log(friend.name)
+      return (
+        <p key={friend.name}>
+          <span id="username">{friend.name}</span>{' '}
+          <span id="online-status">ONLINE</span>
+        </p>
+      )
+    })
+
+    return newFreinds
+  }
+
   render() {
     return (
       <div className="nav-bar">
@@ -14,14 +38,10 @@ export default class Nav extends Component {
             <span id="online-status">ONLINE</span>
           </div>
           <div className="friends-list-container">
-            <h3>Username</h3>
+            <h3>Friends</h3>
+            {this.getFriends()}
           </div>
-          <a id="signin" className="menu-item" href="/signin">
-            Sign In
-          </a>
-          <a id="register" className="menu-item" href="/register">
-            Register
-          </a>
+          <div />
         </Menu>
       </div>
     )
