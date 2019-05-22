@@ -5,40 +5,53 @@
 }
 
 .center-content-container {
-  border: 2px solid;
-  height: 40vh;
+  /* border: 2px solid; */
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+}
+
+.align-content-container {
+  /* border: 2px solid; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .shorter {
-  height: 30vh;
-}
-
-.card-from-hand {
-  position: relative;
-  border: 2px solid;
-  border-radius: 8vw;
-  width: 50%;
-  height: 90%;
-}
-
-.card {
-  position: relative;
-  border: 2px solid;
-  border-radius: 8vw;
-  width: 50%;
-  height: 90%;
+  height: auto;
+  overflow-x: scroll;
+  width: 100vw;
 }
 
 .smaller {
-  width: 12.5vw;
-  height: 40%;
+  /* border: 2px solid; */
+  width: 25vw;
+  height: 14vh;
   border-radius: 3vw;
 }
 
 .spacing {
-  margin: 0.2rem;
+  margin: 0.7rem;
+}
+
+.div-bottom {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* z-index: 2; */
+}
+
+.card img {
+  object-fit: contain;
+  width: 20vw;
+}
+
+.big-card img {
+  object-fit: contain;
+  width: 50vw;
 }
